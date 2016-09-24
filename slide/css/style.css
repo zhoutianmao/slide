@@ -1,0 +1,64 @@
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+img{
+	width: 100%;
+	height: auto;
+}
+#main{
+	width: 30%;
+	position: absolute;
+	top: 60px;
+	left: 35%;
+	overflow: hidden;
+}
+
+#main ul{
+	list-style-type: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:  10000%;
+
+}
+
+#main ul li{
+	position: relative;
+	width: 1%;
+	top: 0;
+	left: 0;
+	float: left;
+}
+
+#btn{
+	width: 40%;
+	position: relative;
+	left: 30%;
+}
+
+#select{
+	width: 60%;
+	position: relative;
+	left: 20%;
+	top: 590px;
+}
+
+#select ul{
+	width: 100%;
+	list-style-type: none;
+}
+
+#select ul li{
+	width: 8%;
+	height: 10px;
+	background-color: green;
+	margin-left: 1%;
+	float: left;
+}
+
+#select ul .active{
+	background-color: red;
+}

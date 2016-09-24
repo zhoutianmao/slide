@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>js部分用面向对象的方式实现画廊效果</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div id="main">
+			<ul>
+				<li index="1">
+					<img src="img/0.jpg">
+				</li>
+				<li index="2">
+					<img src="img/1.jpg">
+				</li>
+				<li index="3">
+					<img src="img/2.jpg">
+				</li>
+				<li index="4">
+					<img src="img/3.jpg">
+				</li>
+				<li index="5">
+					<img src="img/4.jpg">
+				</li>
+				<li index="6"> 
+					<img src="img/5.jpg">
+				</li>
+				<li index="7">
+					<img src="img/6.jpg">
+				</li>
+				<li index="8">
+					<img src="img/7.jpg">
+				</li>
+				<li index="9">
+					<img src="img/8.jpg">
+				</li>
+				<li index="10">
+					<img src="img/9.jpg">
+				</li>
+			</ul>
+			<div style="clear:both;"></div>	
+			</div>
+			<div id="select">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+		</div>
+		<p id="btn">
+			<button id="pre">pre</button>
+			<button id="next">next</button>
+		</p>
+		<script src="js/jquery-1.9.0.min.js"></script>
+		<script src="js/slide.js"></script>
+		<script type="text/javascript">
+
+			$('#main').height($('#main').find('ul').find('li').height());
+			var width_li = $('#main').find('ul').find('li').width();
+			var box = new ImgBox({
+				div : $('#main'),
+				width_li : width_li
+			});
+
+		</script>
+	</body>
+</html>
